@@ -2,7 +2,6 @@
    margin: 0;
    padding: 0;
    background-color: #3e444d;
-
 } 
 
 .app {
@@ -35,5 +34,26 @@
   font-size: 30px;
   padding: 20px;
   cursor: pointer;
+}
+
+.module-box-learn {
+  width: 380px;
+  height: 260px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  
 }
 
