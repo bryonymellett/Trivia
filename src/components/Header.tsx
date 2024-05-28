@@ -5,12 +5,20 @@ interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
     return (
-        <div className="header">
-            <Link to="/" className="link"><h1>Trivia</h1></Link>
+        <div className="header"> 
+                <Link to="/" className="link">
+               <h3>Trivia</h3></Link>
 
-            
-            <h1>Learn</h1>
-            <h1>Test</h1>
+        
+            <div style={{display: 'flex'}}>
+            <Link to="/learn" className="header-link">
+                <h3>Learn</h3>
+            </Link>
+            <Link to="/test" className="header-link">
+                <h3>Test</h3>
+            </Link>
+    
+            </div>
         </div>
     )
 }
