@@ -11,7 +11,7 @@ let countryData = []
 
 const fetchCountryData = async() => {
     try {
-        const res = await axios.get('https://restcountries.com/v3.1/all')
+        const res = await axios.get('https://restcountries.com/v3.1/all', {timeout: 50000})
         countryData = res.data.map((country) => ({
             name: country.name.common,
             capital: country.capital,

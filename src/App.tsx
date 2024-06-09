@@ -7,6 +7,7 @@ import LearnPage from './LearnPage.tsx';
 import Home from './Home.tsx';
 import TestPage from './TestPage.tsx';
 import CapitalsPage from './CapitalsPage.tsx';
+import Region from './Region.tsx';
 
 
 export interface Country {
@@ -42,6 +43,7 @@ const App: React.FC = (props) => {
           <Route path="/learn" element={<LearnPage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/capitals" element={<CapitalsPage countryData={countryData} />} />
+          <Route path="/capitals/:region" element={<Region countryData={countryData}/>}/>
         </Routes>
     </Router>
      

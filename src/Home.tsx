@@ -6,10 +6,16 @@ const Home: React.FC = () => {
 
     return (
         <div className="app">
-        <Link to="/capitals" className="link">
-            <div className="module-box" >
-                CAPITALS
-        </div></Link>
+            <Link to="/capitals" className="link">
+                <div className="module-box" >
+                    CAPITALS
+                </div>
+            </Link>
+            <Link to="/capitals" className="link">
+                <div className="module-box" >
+                    FLAGS
+                </div>
+            </Link>
         
         </div>
 
